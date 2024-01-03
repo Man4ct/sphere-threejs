@@ -47,3 +47,18 @@ nav ul {
   top: 25%;
   transform: translate(-50%, -25%);
 }
+
+p {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  font-size: .8rem;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -25%);
+}
+p a {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}

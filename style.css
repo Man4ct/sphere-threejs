@@ -18,14 +18,13 @@ html {
 }
 
 nav {
-  z-index:2 ;
+  z-index: 2;
   color: white;
   position: relative;
   padding: 4rem 8rem;
   display: flex;
   justify-content: space-between;
 }
-
 
 nav a {
   text-decoration: none;
@@ -38,6 +37,7 @@ nav ul {
   display: flex;
   gap: 4rem;
 }
+
 .title {
   color: white;
   z-index: 2;
@@ -52,13 +52,39 @@ p {
   color: white;
   z-index: 2;
   position: absolute;
-  font-size: .8rem;
+  font-size: 0.8rem;
   left: 50%;
   bottom: 10%;
   transform: translate(-50%, -25%);
 }
+
 p a {
   text-decoration: underline;
   color: white;
   font-weight: bold;
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 600px) {
+  nav {
+    padding: 2rem; /* Adjust padding for mobile */
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center items on mobile */
+    text-align: center; /* Center text on mobile */
+  }
+
+  nav ul {
+    gap: 1rem; /* Adjust gap for mobile */
+    margin-top: 1rem; /* Add margin for separation on mobile */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+    top: 15%; /* Adjust top position for mobile */
+  }
+
+  p {
+    font-size: 0.7rem; /* Adjust font size for mobile */
+    bottom: 5%; /* Adjust bottom position for mobile */
+  }
 }
